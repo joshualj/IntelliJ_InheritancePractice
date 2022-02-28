@@ -21,4 +21,9 @@ public class Employee {
         double salary = basicSalary + (basicSalary * (this.specialAllowance / 100)) + (basicSalary * hra/100);
         return salary;
     }
+
+    public double calculateTransportAllowance(){
+        double transportAllowance = (0.1)*basicSalary;
+        return transportAllowance;
+    }
 }
